@@ -1,8 +1,8 @@
 <div class="container">
   <br>
   <div class="row row-cols-4" >
-    <div class="col" *ngFor="let product of products">
-      <a [routerLink]="['detail']">
+    <div class="col" *ngFor="let product of products; let productId = index">
+      <a [routerLink]="[productId]">
         <div class="card">
           <img src=".\assets\img\placeholder-300-225.jpg" class="card-img-top" alt="...">
           <div class="card-body">
